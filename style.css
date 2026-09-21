@@ -13,12 +13,13 @@ body {
   color: #fff;
 }
 
-@media (max-width: 992px) {
-  #ifk9 {
-    font-family: Comic Sans MS, cursive, sans-serif;
-    font-size: 34px;
-    background-color: #ba9509;
-    border: 11px solid #ed2121;
-    color: #d62b2b;
-  }
+/* Applies to all screen sizes */
+#ifk9 {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  font-size: 34px;
+  background-color: #ba9509;
+  border: 11px solid #ed2121;
+  color: #d62b2b;
+  margin: 0 0 10px 0;
+  display: inline-block;
 }
