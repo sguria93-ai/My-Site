@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GrapesJS Visual Editor</title>
+  
+  <!-- GrapesJS Styles & Scripts -->
+  <link rel="stylesheet" href="https://unpkg.com/grapesjs/dist/css/grapes.min.css" />
+  <script src="https://unpkg.com/grapesjs"></script>
+  <!-- Preset Webpage Plugin (provides blocks, forms, export button) -->
+  <link rel="stylesheet" href="https://unpkg.com/grapesjs-preset-webpage/dist/grapesjs-preset-webpage.min.css" />
+  <script src="https://unpkg.com/grapesjs-preset-webpage"></script>
+
+  <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+      overflow: hidden;
+    }
+    #gjs {
+      height: 100%;
+      border: 0;
+    }
+  </style>
+</head>
+<body>
+  <div id="gjs">
+    <!-- Initial template canvas -->
+    <header style="padding: 40px 20px; text-align: center; background: #2563eb; color: #fff;">
+      <h1>Welcome to My Website</h1>
+      <p>Edit this visually using the sidebar blocks and panels.</p>
+    </header>
+  </div>
+
+  <script>
+    const editor = grapesjs.init({
+      container: '#gjs',
+      fromElement: true,
+      height: '100%',
+      width: 'auto',
+      storageManager: {
+        type: 'local', // Auto-saves changes inside your browser's localStorage
+        autosave: true,
+        stepsBeforeSave: 1,
+        prefix: 'gjs-'
+      },
+      plugins: ['gjs-preset-webpage'],
+      pluginsOpts: {
+        'gjs-preset-webpage': {}
+      }
+    });
+  </script>
+</body>
+</html>
+Scroll down and click Commit changes... → Commit changes.
+
+Step 3: Create the Public Landing Page (index.html)
+Click Add file → Create new file.
+
+Name the file: index.html.   
+PNG
+
+Paste a starting placeholder:
+
+HTML
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Website Under Construction</h1>
+  <p>Design your site by opening <code>editor.html</code>.</p>
+</body>
+</html>
